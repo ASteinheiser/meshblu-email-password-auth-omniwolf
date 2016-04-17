@@ -1,5 +1,5 @@
 {
-  "name": "meshblu-authenticator-email-password",
+  "name": "meshblu-email-password-auth-omniwolf",
   "version": "2.0.14",
   "description": "Email & Password authenticator for Meshblu",
   "main": "command.coffee",
@@ -32,15 +32,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/octoblu/meshblu-authenticator-email-password.git"
+    "url": "https://github.com/asteinheiser/meshblu-email-password-auth-omniwolf.git"
   },
   "keywords": [
     "secureIOT"
   ],
-  "author": "Octoblu Inc.",
-  "license": "MIT",
+  "author": "Andrew Steinheiser",
   "bugs": {
-    "url": "https://github.com/octoblu/meshblu-authenticator-email-password/issues"
+    "url": "https://github.com/asteinheiser/meshblu-email-password-auth-omniwolf/issues"
   },
-  "homepage": "https://github.com/octoblu/meshblu-authenticator-email-password"
+  "homepage": "https://github.com/asteinheiser/meshblu-email-password-auth-omniwolf"
 }
