@@ -28,7 +28,7 @@ class DeviceController
     @deviceModel.create
       query: deviceQuery
       data:
-        type: 'octoblu:user'
+        type: 'omniwolf:user'
       user_id: email
       secret: password
     , @reply(request.body.callbackUrl, response)
