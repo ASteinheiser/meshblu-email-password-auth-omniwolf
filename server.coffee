@@ -19,7 +19,7 @@ catch
 
 meshbluJSON.name = process.env.EMAIL_PASSWORD_AUTHENTICATOR_NAME ? 'Email Authenticator'
 
-port = process.env.EMAIL_PASSWORD_AUTHENTICATOR_PORT ? process.env.PORT ? 80
+port = process.env.EMAIL_PASSWORD_AUTHENTICATOR_PORT ? process.env.PORT ? 81
 
 app = express()
 app.use meshbluHealthcheck()
