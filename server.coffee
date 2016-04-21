@@ -42,7 +42,7 @@ meshbluHttp.device meshbluJSON.uuid, (error, device) ->
     console.error error.message, error.stack
     process.exit 1
 
-  meshbluHttp.setPrivateKey(meshlbluJSON.privateKey) unless meshbluHttp.privateKey
+  meshbluHttp.setPrivateKey(meshbluJSON.privateKey) unless meshbluHttp.privateKey
 
 routes = new Routes {app, meshbluHttp, deviceModel}
 routes.register()
