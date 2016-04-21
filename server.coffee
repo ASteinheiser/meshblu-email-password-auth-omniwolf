@@ -16,6 +16,7 @@ catch
     token:  process.env.EMAIL_PASSWORD_AUTHENTICATOR_TOKEN
     server: process.env.MESHBLU_HOST
     port:   process.env.MESHBLU_PORT
+    privateKey: process.env.MESHBLU_PRIVATE_KEY
 
 meshbluJSON.name = process.env.EMAIL_PASSWORD_AUTHENTICATOR_NAME ? 'Email Authenticator'
 
@@ -41,7 +42,7 @@ meshbluHttp.device meshbluJSON.uuid, (error, device) ->
     console.error error.message, error.stack
     process.exit 1
 
-  meshbluHttp.setPrivateKey(device.privateKey) unless meshbluHttp.privateKey
+  meshbluHttp.setPrivateKey(meshlbluJSON.privateKey) unless meshbluHttp.privateKey
 
 routes = new Routes {app, meshbluHttp, deviceModel}
 routes.register()
