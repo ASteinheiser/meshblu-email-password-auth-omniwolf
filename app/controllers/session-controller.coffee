@@ -5,7 +5,7 @@ class SessionController
   constructor: ({@meshbluHttp, @deviceModel}) ->
 
   create: (request, response) =>
-    {email,password,callbackUrl} = request.body
+    var {email,password,callbackUrl} = request.body
     query = {}
     email = email.toLowerCase()
     query[@deviceModel.authenticatorUuid + '.id'] = email
